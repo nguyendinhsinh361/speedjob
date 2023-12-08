@@ -10,12 +10,7 @@ import {
   CodeWave,
 } from "../assets";
 
-export const jobTypes = [
-  "Toàn thời gian",
-  "Bán thời gian",
-  "Hợp đồng",
-  "Thực tập",
-];
+export const jobTypes = ["Theo giờ", "Theo ngày", "Theo tuần", "Theo tháng"];
 
 export const experience = [
   {title: "Dưới 1 năm", value: "0-1"},
@@ -40,8 +35,8 @@ export const jobs = [
     id: "1",
     company: {
       name: "Microsoft Corporation",
-      location: "Califonia",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -67,8 +62,8 @@ export const jobs = [
     id: "2",
     company: {
       name: "Google Corporation",
-      location: "Califonia",
-      email: "support@google.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@google",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -94,15 +89,15 @@ export const jobs = [
     id: "3",
     company: {
       name: "LinkedIn Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
       profileUrl: Linkedin,
     },
     jobTitle: "Social Meia Manager",
-    location: "India, Mumbai",
+    location: "Việt Nam, Mumbai",
     jobType: "Full-Time",
     salary: "1200",
     detail: [
@@ -121,8 +116,8 @@ export const jobs = [
     id: "4",
     company: {
       name: "Spotify Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -148,8 +143,8 @@ export const jobs = [
     id: "5",
     company: {
       name: "Facebook Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -175,8 +170,8 @@ export const jobs = [
     id: "6",
     company: {
       name: "WhatsApp Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -202,8 +197,8 @@ export const jobs = [
     id: "7",
     company: {
       name: "Instagram Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -229,8 +224,8 @@ export const jobs = [
     id: "8",
     company: {
       name: "Youtube Corporation",
-      location: "Germany",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -256,8 +251,8 @@ export const jobs = [
     id: "9",
     company: {
       name: "CodeWave Solutions",
-      location: "India",
-      email: "support@microsoft.com",
+      location: "Việt Nam",
+      email: "support@maicovic.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -303,8 +298,8 @@ export const companies = [
   {
     _id: 1,
     name: "Microsoft Corporation",
-    location: "Califonia",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -314,8 +309,8 @@ export const companies = [
   {
     _id: 2,
     name: "Google Corporation",
-    location: "Califonia",
-    email: "support@google.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@google",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -325,8 +320,8 @@ export const companies = [
   {
     _id: 3,
     name: "LinkedIn Corporation",
-    location: "Germany",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -336,8 +331,8 @@ export const companies = [
   {
     _id: 4,
     name: "Spotify Corporation",
-    location: "Germany",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -347,8 +342,8 @@ export const companies = [
   {
     _id: 5,
     name: "Facebook Corporation",
-    location: "Germany",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -358,8 +353,8 @@ export const companies = [
   {
     _id: 6,
     name: "WhatsApp Corporation",
-    location: "Germany",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -369,8 +364,8 @@ export const companies = [
   {
     _id: 7,
     name: "Instagram Corporation",
-    location: "India",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -380,8 +375,8 @@ export const companies = [
   {
     _id: 8,
     name: "Youtube Corporation",
-    location: "Germany",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -391,8 +386,8 @@ export const companies = [
   {
     _id: 9,
     name: "CodeWave Solutions",
-    location: "Ghana",
-    email: "support@microsoft.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -404,8 +399,8 @@ export const companies = [
 export const users = [
   {
     name: "Google Corporation",
-    location: "Califonia",
-    email: "support@google.com",
+    location: "Việt Nam",
+    email: "support@maicovic.com",
     contact: "support@google",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",

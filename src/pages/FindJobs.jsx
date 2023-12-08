@@ -79,7 +79,7 @@ const FindJobs = () => {
           </div>
 
           <div className="py-2 mt-4">
-            <div className="flex justify-between mb-3">
+            {/* <div className="flex justify-between mb-3">
               <p className="flex items-center gap-2 font-semibold">
                 <BsStars />
                 Kinh nghiệm
@@ -88,9 +88,9 @@ const FindJobs = () => {
               <button>
                 <MdOutlineKeyboardArrowDown />
               </button>
-            </div>
+            </div> */}
 
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
               {experience.map((exp) => (
                 <div key={exp.title} className="flex gap-3">
                   <input
@@ -102,7 +102,7 @@ const FindJobs = () => {
                   <span>{exp.title}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 

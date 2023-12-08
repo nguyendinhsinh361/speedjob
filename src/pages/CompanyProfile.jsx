@@ -82,7 +82,7 @@ const CompnayForm = ({open, setOpen}) => {
                     <TextInput
                       name="location"
                       label="Location/Address"
-                      placeholder="VD: Califonia"
+                      placeholder="VD: Việt Nam"
                       type="text"
                       register={register("location", {
                         required: "Address is required",

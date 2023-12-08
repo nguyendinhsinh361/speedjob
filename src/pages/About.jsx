@@ -1,18 +1,17 @@
 import React from "react";
 import {JobImg} from "../assets";
+import "../css/Navbar.css";
 
 const About = () => {
   return (
     <div className="container mx-auto flex flex-col gap-8 2xl:gap-14 py-6 ">
       <div className="w-full flex flex-col-reverse md:flex-row gap-10 items-center p-5">
         <div className="w-full md:2/3 2xl:w-2/4">
-          <h1 className="text-3xl text-blue-600 font-bold mb-5">
-            Về chúng tôi
-          </h1>
+          <h1 className="text-3xl text-navbar font-bold mb-5">Về chúng tôi</h1>
           <p className="text-justify leading-7">
             Chào mừng bạn đến với{" "}
-            <a href="/" className="text-blue-600 font-bold text-xl">
-              Nhanh<span className="text-[#1677cccb]">Việc</span>
+            <a href="/" className="text-navbar font-bold text-xl">
+              MAICO<span className="text-[#8d3b94]">VIEC</span>
             </a>
             . Chúng tôi là một nền tảng kết nối người tìm việc với nhà tuyển
             dụng. Chúng tôi tin rằng mọi người đều có thể tìm được công việc phù
@@ -21,9 +20,9 @@ const About = () => {
             được công việc mơ ước của mình. Chúng tôi luôn nỗ lực để mang đến
             cho người tìm việc những cơ hội việc làm tốt nhất, và cho nhà tuyển
             dụng những ứng viên phù hợp nhất. Chúng tôi tin rằng{" "}
-            <a href="/" className="text-blue-600 font-bold text-xl">
-              Nhanh<span className="text-[#1677cccb]">Việc</span>
-            </a>{" "}
+            <a href="/" className="text-navbar font-bold text-xl">
+              MAICO<span className="text-[#8d3b94]">VIEC</span>
+            </a>
             là một nền tảng hiệu quả để kết nối người tìm việc với nhà tuyển
             dụng. Chúng tôi cam kết mang đến cho cả hai bên những trải nghiệm
             tốt nhất.
@@ -33,7 +32,7 @@ const About = () => {
       </div>
 
       <div className="leading-8 px-5 text-justify">
-        <h1 className="text-3xl text-blue-600 font-bold mb-5">
+        <h1 className="text-3xl text-navbar font-bold mb-5">
           Giá trị của chúng tôi
         </h1>
         <ul>
@@ -56,7 +55,7 @@ const About = () => {
           </li>
         </ul>
         <br />
-        <h1 className="text-3xl text-blue-600 font-bold mb-5">
+        <h1 className="text-3xl text-navbar font-bold mb-5">
           Các dịch vụ mà chúng tôi cung cấp
         </h1>
         <ul>
@@ -80,14 +79,14 @@ const About = () => {
           những dịch vụ tốt nhất.
         </ul>
         <br />
-        <h1 className="text-3xl text-blue-600 font-bold mb-5">
+        <h1 className="text-3xl text-navbar font-bold mb-5">
           Đội ngũ nhân viên của chúng tôi
         </h1>
         <p>
           Đội ngũ nhân viên của{" "}
-          <a href="/" className="text-blue-600 font-bold text-xl">
-            Nhanh<span className="text-[#1677cccb]">Việc</span>
-          </a>{" "}
+          <a href="/" className="text-navbar font-bold text-xl">
+            MAICO<span className="text-[#8d3b94]">VIEC</span>
+          </a>
           là những người có kinh nghiệm và chuyên môn trong lĩnh vực việc làm.
           Chúng tôi luôn nỗ lực để mang đến cho người tìm việc và nhà tuyển dụng
           những trải nghiệm tốt nhất. Chúng tôi tự hào là một đội ngũ trẻ trung,
@@ -95,13 +94,13 @@ const About = () => {
           cải thiện nền tảng của mình.
         </p>
         <br />
-        <h1 className="text-3xl text-blue-600 font-bold mb-5">
+        <h1 className="text-3xl text-navbar font-bold mb-5">
           Các thành tựu của chúng tôi
         </h1>
         <p>
-          <a href="/" className="text-blue-600 font-bold text-xl">
-            Nhanh<span className="text-[#1677cccb]">Việc</span>
-          </a>{" "}
+          <a href="/" className="text-navbar font-bold text-xl">
+            MAICO<span className="text-[#8d3b94]">VIEC</span>
+          </a>
           đã giúp hàng nghìn người tìm được công việc mơ ước của mình. Được vinh
           danh là một trong những nền tảng tuyển dụng tốt nhất tại Việt Nam.
           Được tin tưởng bởi các nhà tuyển dụng hàng đầu tại Việt Nam. Chúng tôi

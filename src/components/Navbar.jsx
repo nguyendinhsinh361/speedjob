@@ -8,6 +8,7 @@ import {Link} from "react-router-dom";
 import CustomButton from "./CustomButton";
 import {users} from "../utils/data";
 import {useSelector} from "react-redux";
+import "../css/Navbar.css";
 
 function MenuList({user, onClick}) {
   const handleLogout = () => {};
@@ -109,8 +110,8 @@ const Navbar = () => {
       <div className="relative bg-[#f7fdfd] z-50">
         <nav className="container mx-auto flex items-center justify-between p-5">
           <div>
-            <Link to="/" className="text-blue-600 font-bold text-xl">
-              Nhanh<span className="text-[#1677cccb]">Việc</span>
+            <Link to="/" className="text-navbar  font-bold text-xl">
+              MAICO<span className="text-[#661b6d]">VIC</span>
             </Link>
           </div>
 
@@ -134,7 +135,7 @@ const Navbar = () => {
               <Link to="/user-auth">
                 <CustomButton
                   title="Đăng nhập"
-                  containerStyles="text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600"
+                  containerStyles="text-navbar py-1.5 px-5 focus:outline-none custom-button rounded-full border custom-button-border"
                 />
               </Link>
             ) : (
@@ -181,7 +182,7 @@ const Navbar = () => {
               <a href="/user-auth">
                 <CustomButton
                   title="Đăng nhập"
-                  containerStyles={`text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600`}
+                  containerStyles={`text-navbar py-1.5 px-5 focus:outline-none custom-button rounded-full border custom-button-border`}
                 />
               </a>
             ) : (

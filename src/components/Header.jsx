@@ -4,6 +4,7 @@ import {CiLocationOn} from "react-icons/ci";
 import CustomButton from "./CustomButton";
 import {popularSearch} from "../utils/data";
 import {HeroImage} from "../assets";
+import "../css/Header.css";
 
 const SearchInput = ({placeholder, icon, value, setValue, styles}) => {
   const handleChange = (e) => {
@@ -73,7 +74,7 @@ const Header = ({
                 onClick={handleClick}
                 title="Tìm kiếm"
                 containerStyles={
-                  "text-white py-2 md:py3 px-3 md:px-10 focus:outline-none bg-blue-600 rounded-full md:rounded-md text-sm md:text-base"
+                  "text-white py-2 md:py3 px-3 md:px-10 focus:outline-none rounded-full md:rounded-md text-sm md:text-base bg-custom-purple"
                 }
               />
             </div>
@@ -83,7 +84,7 @@ const Header = ({
               {popularSearch.map((search, index) => (
                 <span
                   key={index}
-                  className="bg-[#1d4fd826] text-[#1d4ed8] py-1 px-2 rounded-full text-sm md:text-base"
+                  className="bg-[#1d4fd826] text-[#8D3B94] py-1 px-2 rounded-full text-sm md:text-base"
                 >
                   {search}
                 </span>
