@@ -9,9 +9,14 @@ import CustomButton from "./CustomButton";
 import {users} from "../utils/data";
 import {useSelector} from "react-redux";
 import "../css/Navbar.css";
+import {useLocation} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 function MenuList({user, onClick}) {
-  const handleLogout = () => {};
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    navigate("/user-auth");
+  };
 
   return (
     <div>
@@ -19,19 +24,10 @@ function MenuList({user, onClick}) {
         <div className="flex">
           <Menu.Button className="inline-flex gap-2 w-full rounded-md bg-white md:px-4 py-2 text-sm font-medium text-slate-700 hover:bg-opacity-20 ">
             <div className="leading[80px] flex flex-col items-start">
-              <p className="text-sm font-semibold ">
-                {user?.firstName ?? user?.name}
-              </p>
-              <span className="text-sm text-blue-600 ">
-                {user?.jobTitle ?? user?.email}
-              </span>
+              <p className="text-sm font-semibold ">{user?.name}</p>
+              <span className="text-sm text-blue-600 ">{user?.email}</span>
             </div>
 
-            <img
-              src={user?.profileUrl}
-              alt="user profile"
-              className="w-10 h-10 rounded-full object-cover "
-            />
             <BiChevronDown
               className="h-8 w-8 text-slate-600"
               aria-hidden="true"
@@ -50,28 +46,6 @@ function MenuList({user, onClick}) {
         >
           <Menu.Items className="absolute z-50 right-2 mt-2 w-56 origin-top-right divide-y dividfe-gray-100 rounded-md bg-white shadow-lg focus:outline-none ">
             <div className="p-1 ">
-              <Menu.Item>
-                {({active}) => (
-                  <Link
-                    to={`${
-                      user?.accountType ? "user-profile" : "company-profile"
-                    }`}
-                    className={`${
-                      active ? "bg-blue-500 text-white" : "text-gray-900"
-                    } group flex w-full items-center rounded-md p-2 text-sm`}
-                    onClick={onClick}
-                  >
-                    <CgProfile
-                      className={`${
-                        active ? "text-white" : "text-gray-600"
-                      } mr-2 h-5 w-5  `}
-                      aria-hidden="true"
-                    />
-                    {user?.accountType ? "User Profile" : "Company Profile"}
-                  </Link>
-                )}
-              </Menu.Item>
-
               <Menu.Item>
                 {({active}) => (
                   <button
@@ -97,8 +71,9 @@ function MenuList({user, onClick}) {
     </div>
   );
 }
-const Navbar = () => {
-  const user = useSelector((state) => state.user);
+const Navbar = (state) => {
+  const location = useLocation();
+  const {state: user} = location;
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseNavbar = () => {
@@ -111,7 +86,7 @@ const Navbar = () => {
         <nav className="container mx-auto flex items-center justify-between p-5">
           <div>
             <Link to="/" className="text-navbar  font-bold text-xl">
-              MAICO<span className="text-[#661b6d]">VIC</span>
+              Speed<span className="text-[#661b6d]">Job</span>
             </Link>
           </div>
 
@@ -178,7 +153,7 @@ const Navbar = () => {
           </Link>
 
           <div className="w-full py-10">
-            {!user?.token ? (
+            {!user?.result?.token ? (
               <a href="/user-auth">
                 <CustomButton
                   title="Đăng nhập"
@@ -187,7 +162,7 @@ const Navbar = () => {
               </a>
             ) : (
               <div>
-                <MenuList user={user} onClick={handleCloseNavbar} />
+                <MenuList user={user?.result} onClick={handleCloseNavbar} />
               </div>
             )}
           </div>

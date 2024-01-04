@@ -11,7 +11,11 @@ import {
   UploadJob,
   UserProfile,
 } from "./pages";
+import DetailUser from "./components/DetailUser/DetailUser";
 import {useSelector} from "react-redux";
+import Admin from "./components/Admin/Admin";
+import AddUser from "./components/AddUser/AddUser";
+import FaceIO from "./components/FaceIO/FaceIO";
 
 function Layout() {
   const {user} = useSelector((state) => state.user);
@@ -33,6 +37,18 @@ function App() {
 
       <Routes>
         <Route element={<Layout />}>
+        <Route
+            path="/admin-auth" element={<FaceIO />}
+          />
+          <Route
+            path="/admin/:id" element={<DetailUser />}
+          />
+          <Route
+            path="/admin" element={<Admin />}
+          />
+          <Route
+            path="/admin/add-user" element={<AddUser />}
+          />
           <Route
             path="/"
             element={<Navigate to="/find-jobs" replace={true} />}

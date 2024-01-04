@@ -36,7 +36,7 @@ export const jobs = [
     company: {
       name: "Microsoft Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -63,7 +63,7 @@ export const jobs = [
     company: {
       name: "Google Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@google",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -90,7 +90,7 @@ export const jobs = [
     company: {
       name: "LinkedIn Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -117,7 +117,7 @@ export const jobs = [
     company: {
       name: "Spotify Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -144,7 +144,7 @@ export const jobs = [
     company: {
       name: "Facebook Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -171,7 +171,7 @@ export const jobs = [
     company: {
       name: "WhatsApp Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -198,7 +198,7 @@ export const jobs = [
     company: {
       name: "Instagram Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -225,7 +225,7 @@ export const jobs = [
     company: {
       name: "Youtube Corporation",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -252,7 +252,7 @@ export const jobs = [
     company: {
       name: "CodeWave Solutions",
       location: "Việt Nam",
-      email: "support@maicovic.com",
+      email: "support@Speedjob.com",
       contact: "support@microsoft",
       about:
         "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -280,7 +280,7 @@ export const footerLinks = [
   {
     id: "01",
     title: "Company",
-    links: ["Home", "About Us", "Services", "Our Team"],
+    links: ["Home", "About Us", "Serjobes", "Our Team"],
   },
   {
     id: "02",
@@ -299,7 +299,7 @@ export const companies = [
     _id: 1,
     name: "Microsoft Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -310,7 +310,7 @@ export const companies = [
     _id: 2,
     name: "Google Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@google",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -321,7 +321,7 @@ export const companies = [
     _id: 3,
     name: "LinkedIn Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -332,7 +332,7 @@ export const companies = [
     _id: 4,
     name: "Spotify Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -343,7 +343,7 @@ export const companies = [
     _id: 5,
     name: "Facebook Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -354,7 +354,7 @@ export const companies = [
     _id: 6,
     name: "WhatsApp Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -365,7 +365,7 @@ export const companies = [
     _id: 7,
     name: "Instagram Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -376,7 +376,7 @@ export const companies = [
     _id: 8,
     name: "Youtube Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -387,7 +387,7 @@ export const companies = [
     _id: 9,
     name: "CodeWave Solutions",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@microsoft",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",
@@ -400,7 +400,7 @@ export const users = [
   {
     name: "Google Corporation",
     location: "Việt Nam",
-    email: "support@maicovic.com",
+    email: "support@Speedjob.com",
     contact: "support@google",
     about:
       "Nhân viên marketing: Nhân viên marketing là người chịu trách nhiệm xây dựng và triển khai các chiến lược marketing nhằm quảng bá sản phẩm hoặc dịch vụ của doanh nghiệp đến với khách hàng.",

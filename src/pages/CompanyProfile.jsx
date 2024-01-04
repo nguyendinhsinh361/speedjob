@@ -176,10 +176,6 @@ const CompanyProfile = () => {
     <div className="container mx-auto p-5">
       <div className="">
         <div className="w-full flex flex-col md:flex-row gap-3 justify-between">
-          <h2 className="text-gray-600 text-xl font-semibold">
-            Welcome, {info?.name}
-          </h2>
-
           {user?.user?.accountType === undefined &&
             info?._id === user?.user?._id && (
               <div className="flex items-center justifu-center py-5 md:py-0 gap-4">

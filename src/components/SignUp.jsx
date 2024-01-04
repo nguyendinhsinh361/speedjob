@@ -5,9 +5,10 @@ import {useLocation} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import TextInput from "./TextInput";
 import CustomButton from "./CustomButton";
+import {useNavigate} from "react-router-dom";
 
 const SignUp = ({open, setOpen}) => {
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const location = useLocation();
 
   const [isRegister, setIsRegister] = useState(true);
@@ -26,8 +27,53 @@ const SignUp = ({open, setOpen}) => {
   let from = location.state?.from?.pathname || "/";
 
   const closeModal = () => setOpen(false);
-  const onSubmit = () => {};
+  const onSubmit = async () => {
+    const formDataRegister = {
+      email: getValues("email"),
+      name: getValues("name"),
+      password: getValues("password"),
+    };
 
+    const {name, ...formDataLogin} = formDataRegister;
+    const closeModal = () => setOpen(false);
+
+    try {
+      let response;
+      if (isRegister) {
+        response = await fetch("http://localhost:3000/api/auth/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDataRegister),
+        });
+      } else {
+        // Call your login API here
+        response = await fetch("http://localhost:3000/api/auth/signin", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDataLogin),
+        });
+      }
+
+      const data = await response.json();
+      console.log(1111, data)
+
+      if (!response.ok) {
+        setErrMsg(data.message || "Something went wrong");
+      } else {
+        // Handle successful response, e.g., dispatch user info to Redux store
+        const user = data?.result;
+        navigate("/find-jobs", {state: user});
+        closeModal();
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setErrMsg("Something went wrong");
+    }
+  };
   return (
     <>
       <Transition appear show={open || false}>
@@ -65,24 +111,10 @@ const SignUp = ({open, setOpen}) => {
 
                   <div className="w-full flex items-center justify-center py-4 ">
                     <button
-                      className={`flex-1 px-4 py-2 rounded text-sm outline-none ${
-                        accountType === "seeker"
-                          ? "bg-[#1d4fd862] text-blue-900 font-semibold"
-                          : "bg-white border border-blue-400"
-                      }`}
-                      onClick={() => setAccountType("seeker")}
-                    >
-                      Tài khoản người dùng
-                    </button>
-                    <button
-                      className={`flex-1 px-4 py-2 rounded text-sm outline-none ${
-                        accountType !== "seeker"
-                          ? "bg-[#1d4fd862] text-blue-900 font-semibold"
-                          : "bg-white border border-blue-400"
-                      }`}
+                      className={`flex-1 px-4 py-2 rounded text-sm outline-none bg-[#1d4fd862] text-blue-900 font-semibold`}
                       onClick={() => setAccountType("company")}
                     >
-                      Tài khoản công ty
+                      Tài khoản cá nhân
                     </button>
                   </div>
 
@@ -103,61 +135,17 @@ const SignUp = ({open, setOpen}) => {
 
                     {isRegister && (
                       <div className="w-full flex gap-1 md:gap-2">
-                        <div
-                          className={`${
-                            accountType === "seeker" ? "w-1/2" : "w-full"
-                          }`}
-                        >
+                        <div className={`w-full`}>
                           <TextInput
-                            name={
-                              accountType === "seeker" ? "firstName" : "name"
-                            }
-                            label={
-                              accountType === "seeker" ? "Họ" : "Tên công ty"
-                            }
-                            placeholder={
-                              accountType === "seeker"
-                                ? "VD: Nguyễn"
-                                : "Dream Job"
-                            }
+                            name={"name"}
+                            label={"Họ tên"}
+                            placeholder={"Dream Job"}
                             type="text"
-                            register={register(
-                              accountType === "seeker" ? "firstName" : "name",
-                              {
-                                required:
-                                  accountType === "seeker"
-                                    ? "Họ là bắt buộc"
-                                    : "Tên công ty là bắt buộc",
-                              }
-                            )}
-                            error={
-                              accountType === "seeker"
-                                ? errors.firstName
-                                  ? errors.firstName?.message
-                                  : ""
-                                : errors.name
-                                ? errors.name?.message
-                                : ""
-                            }
+                            register={register("name", {
+                              required: "tên là bắt buộc",
+                            })}
                           />
                         </div>
-
-                        {accountType === "seeker" && isRegister && (
-                          <div className="w-1/2">
-                            <TextInput
-                              name="lastName"
-                              label="Tên"
-                              placeholder="VD: Shin"
-                              type="text"
-                              register={register("lastName", {
-                                required: "Tên là bắt buộc",
-                              })}
-                              error={
-                                errors.lastName ? errors.lastName?.message : ""
-                              }
-                            />
-                          </div>
-                        )}
                       </div>
                     )}
 

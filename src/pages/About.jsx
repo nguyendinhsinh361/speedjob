@@ -11,7 +11,7 @@ const About = () => {
           <p className="text-justify leading-7">
             Chào mừng bạn đến với{" "}
             <a href="/" className="text-navbar font-bold text-xl">
-              MAICO<span className="text-[#8d3b94]">VIEC</span>
+              Speed<span className="text-[#8d3b94]">JOB</span>
             </a>
             . Chúng tôi là một nền tảng kết nối người tìm việc với nhà tuyển
             dụng. Chúng tôi tin rằng mọi người đều có thể tìm được công việc phù
@@ -21,7 +21,7 @@ const About = () => {
             cho người tìm việc những cơ hội việc làm tốt nhất, và cho nhà tuyển
             dụng những ứng viên phù hợp nhất. Chúng tôi tin rằng{" "}
             <a href="/" className="text-navbar font-bold text-xl">
-              MAICO<span className="text-[#8d3b94]">VIEC</span>
+              Speed<span className="text-[#8d3b94]">JOB</span>
             </a>
             là một nền tảng hiệu quả để kết nối người tìm việc với nhà tuyển
             dụng. Chúng tôi cam kết mang đến cho cả hai bên những trải nghiệm
@@ -85,7 +85,7 @@ const About = () => {
         <p>
           Đội ngũ nhân viên của{" "}
           <a href="/" className="text-navbar font-bold text-xl">
-            MAICO<span className="text-[#8d3b94]">VIEC</span>
+            Speed<span className="text-[#8d3b94]">JOB</span>
           </a>
           là những người có kinh nghiệm và chuyên môn trong lĩnh vực việc làm.
           Chúng tôi luôn nỗ lực để mang đến cho người tìm việc và nhà tuyển dụng
@@ -99,7 +99,7 @@ const About = () => {
         </h1>
         <p>
           <a href="/" className="text-navbar font-bold text-xl">
-            MAICO<span className="text-[#8d3b94]">VIEC</span>
+            Speed<span className="text-[#8d3b94]">JOB</span>
           </a>
           đã giúp hàng nghìn người tìm được công việc mơ ước của mình. Được vinh
           danh là một trong những nền tảng tuyển dụng tốt nhất tại Việt Nam.
